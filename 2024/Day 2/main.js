@@ -28,12 +28,11 @@ function isSafe(levels) {
 }
 
 // Part 2
-function isSafeWithDampener(levels) {
+function isSafeWithRemovingOneLevel(levels) {
     if (isSafe(levels)) {
         return true;
     }
 
-    // Check if removing one level makes the report safe
     for (let i = 0; i < levels.length; i++) {
         const modifiedLevels = levels.slice(0, i).concat(levels.slice(i + 1));
         if (isSafe(modifiedLevels)) {
