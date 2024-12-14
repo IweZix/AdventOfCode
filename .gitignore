@@ -1,3 +1,6 @@
+# Advent of code
+*.txt
+
 # Logs
 logs
 *.log
